@@ -1,4 +1,4 @@
-\documentclass [24pt] {report}
+\documentclass [24pt] {article}
 
 % report setting environment
 \usepackage {fancyhdr}
@@ -9,9 +9,49 @@
 \fancyhead [LO] {\thepage}
 
 \begin {document}
-	2. Radiocarbon Dating\\
+	\section {Struggle for Existence from Charles Darwin}
+	\section {Radiocarbon Dating}
 	(1)
 	\[\frac{dN}{dt} = -kN \Rightarrow \frac{dN}{N} = -k dt\]
 	\[\Rightarrow \int_{t_{0}}^{t}\frac{dN}{N} = \int_{t_0}^{t} k dt \Rightarrow \ln(\frac{N(t)}{N(t_0)}) = -k(t-t_0)\]
 	\[Remove\; log\; \Rightarrow N(t) = N(t_0)e^{-k(t-t_0)}\]
+	\vspace {16pt}
+	\\(2)\\
+	I use the equation : $\ln p = -k (t_1 - t_0)$\\
+	The year for dated : 1994 = $t_1$\\
+	\begin {itemize}
+		\item case1: 75\% of the initial level of carbon 14
+		\[t_0 = 1994 + \frac{\ln 0.75}{0.0001216} \approx -371\]
+	The year is around 371 B.C.
+		\item case2: 77\% of the initial level of carbon 14
+	\[t_0 = 1994 + \frac{\ln 0.77}{0.0001216} \approx -155\]
+	The year is around 155 B.C.
+	\end {itemize}
+	Thus, the scroll is written between 371 B.C. to 155 B.C.\\
+	\vspace {16pt}
+	\\(3)\\
+	Problem1: what is the proportion of the original from 500 A.C. to this time (2017 A.C.). Apply the equation $\ln p = -k (t_1 - t_0)$, We have\\
+	\[p = e^{-0.0001216 * (2017-500)} \approx 0.832\]
+	Thus, the proportion of the original carbon 14 is 83.2\%\\
+	Problem2:\\
+	The round table is dated in 1976 and with 91.6\% of original quantity. Apply the equation $\ln p = -k (t_1 - t_0)$, we can get
+	\[t_0 = 1976 + \frac{\ln 0.916}{0.0001216} \approx 1254\]
+	Thus, 1254 is the table date.
+	\vspace {16pt}
+	\\(4)\\
+	If we find that the 85.5 \% of the C-14, what's the age?\\
+	By applying the equation $\ln p = -k (t_1 - t_0)$, we can get
+	\[age = t_1 - t_0 = \frac{\ln 0.855}{-0.0001216} \approx 1288\]
+	Thus, the age is 1288 years.
+	\vspace {16pt}
+	\\(5)\\
+	Assume the half life of C-14 is 5700 years.\\
+	Since the radiocative atoms decay is exponential decay, after certain years, the change of proportion between two years are not significant. For example, the proportion between age 10 billion and 11 billion are nearly zero. So the time range for C-14 should not be too long. If we need to use long years, we need choose another atom to use.
+	\vspace {16pt}
+	\\(6)\\
+	The half-time is 3.3 hr, so k is
+	\[k = \frac {\ln 2}{3.3} \approx 0.21 \;\;[hr^{-1}]\]
+	By applying the equation $\ln p = -k (t_1 - t_0)$, we can get
+	\[hours = t_{1}-t_{0} = \frac{\ln 0.9}{-0.21} \approx 0.5\]
+	Thus, it take 0.5 hr for 90\% of the lead to decay.
 \end {document}
