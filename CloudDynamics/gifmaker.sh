@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# parameters
-src="./*.png"
-dest="./PA_birdview.gif"
-delay="10"	# the true time will be delay/100
+# parameters, change here
+src="./*.png"	# images you want to convert
+dest="./PA_birdview.gif"	# gif name
+delay="10"	# the true time interval will be delay/100
 
+# worksection, do not change this part
 echo "convert begin"
 order="convert -delay ${delay} ${src} ${dest}"
 $order
