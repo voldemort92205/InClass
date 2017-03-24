@@ -1,0 +1,41 @@
+\documentclass [12pt] {article}
+
+% report setting environment
+\usepackage {fancyhdr}
+\pagestyle {fancy}
+\fancyhf{}
+\fancyheadoffset {0in}
+\fancyhead[C] {HW3-R05229011}
+\fancyhead [LO] {\thepage}
+
+\begin {document}
+	\section {Problem 1}
+	\subsection {Q1 - solve $\overline{x}$ and $\overline{y}$}
+	Since x, y $>$ 0, $\overline{x}$ is one of point in x and $\overline{y}$ is one of point in y, we have $\overline{x}$, $\overline{y}$ $>$ 0. So we have
+	\[f(\overline{x}, \overline{y}) = \alpha_1\overline{x}(1-\overline{x}-a\overline{y})=0=1-\overline{x}-a\overline{y}\]
+	\[g(\overline{x}, \overline{y}) = \alpha_2\overline{y}(1-\overline{y}-b\overline{x})=0=1-\overline{y}-b\overline{x}\]
+	By solving above two equations, we have
+	\[\overline{x} = \frac{a-1}{ab-1} \;and \;\overline{y} = \frac{b-1}{ab-1}, \;with \;ab\neq 0\]
+	By the restriction of $\overline{x}$, $\overline{y}$ $>$ 0, $\overline{x}$ and $\overline{y}$ exist only under following conditions:
+	\begin {itemize}
+		\item $a-1 \neq 0$
+		\item $b-1 \neq 0$
+		\item $ab-1 \neq 0$
+		\item $(ab-1)(a-1) > 0$
+		\item $(ab-1)(b-1) > 0$
+	\end {itemize}
+	\subsection {Q2 - what is A, tr(A) and det(A)}
+	Given f and g, we have
+	\[\frac{\partial f}{\partial x} = \alpha_1 - 2\alpha_1x-\alpha_1ay\]
+	\[\frac{\partial f}{\partial y} = -\alpha_1ax\]
+	\[\frac{\partial g}{\partial x} = -\alpha_2by\]
+	\[\frac{\partial g}{\partial y} = \alpha_2 - 2\alpha_2y-\alpha_2bx\]
+	So,
+	\[A = \left( \begin{array}{cc} \alpha_1-2\alpha_1x-\alpha_1ay & -\alpha_1ax \\ -\alpha_2by & \alpha_2-2\alpha_2y-\alpha_2bx\end{array} \right)\]
+	\[tr(A) = \frac{\partial f}{\partial x} + \frac{\partial g}{\partial y} = (\alpha_1+\alpha_2) - 2(\alpha_1x+\alpha_2y)-(\alpha_1ay+\alpha_2bx)\]
+	\[det(A) = \frac{\partial f}{\partial x}\frac{\partial g}{\partial y} - \frac{\partial f}{\partial y}\frac{\partial g}{\partial x} = \]
+	\[\alpha_1\alpha_2 - 2\alpha_1\alpha_2 x - 2\alpha_1\alpha_2 y + 4\alpha_1\alpha_2 xy + 2a\alpha_1\alpha_1 y^2 + 2b\alpha_1\alpha_2 x^2 - a\alpha_1\alpha_2 y - \alpha_1\alpha_2 bx\]
+	\subsection {Q3}
+	Assume $\lambda_1$ and $\lambda_2$ are two solutions for $\lambda^2 - tr(A)\lambda+det(A) = 0$\\
+	With $tr(A) < 0$ and $det(A) > 0$, we have $\lambda_1+\lambda_2 > 0$ and $\lambda_1\lambda_2 > 0$. Thus, $\lambda = c \pm di$ with $c, d \in \Re.$
+\end {document}
