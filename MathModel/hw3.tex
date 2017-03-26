@@ -35,7 +35,26 @@
 	\[tr(A) = \frac{\partial f}{\partial x} + \frac{\partial g}{\partial y} = (\alpha_1+\alpha_2) - 2(\alpha_1x+\alpha_2y)-(\alpha_1ay+\alpha_2bx)\]
 	\[det(A) = \frac{\partial f}{\partial x}\frac{\partial g}{\partial y} - \frac{\partial f}{\partial y}\frac{\partial g}{\partial x} = \]
 	\[\alpha_1\alpha_2 - 2\alpha_1\alpha_2 x - 2\alpha_1\alpha_2 y + 4\alpha_1\alpha_2 xy + 2a\alpha_1\alpha_1 y^2 + 2b\alpha_1\alpha_2 x^2 - a\alpha_1\alpha_2 y - \alpha_1\alpha_2 bx\]
-	\subsection {Q3}
+	\subsection {Q3 - prove that $(\overline{x}, \overline{y})$ is stable equilibrium point}
 	Assume $\lambda_1$ and $\lambda_2$ are two solutions for $\lambda^2 - tr(A)\lambda+det(A) = 0$\\
-	With $tr(A) < 0$ and $det(A) > 0$, we have $\lambda_1+\lambda_2 > 0$ and $\lambda_1\lambda_2 > 0$. Thus, $\lambda = c \pm di$ with $c, d \in \Re.$
+	With $tr(A) < 0$ and $det(A) > 0$, we have $\lambda_1+\lambda_2 < 0$ and $\lambda_1\lambda_2 > 0$. Thus, $\lambda = -c \pm di$ with $c, d \in \Re$ and $c > 0.$\\
+	By the general solution $\widetilde{u} = e^{\lambda t}\widetilde{c} = e^{(-c\pm di)t}\widetilde{c}$. We have
+	\[e^{(-c\pm di)t}\widetilde{c} = e^{-ct}(e^{\pm dit}\widetilde{c}) \rightarrow 0 \;as \;t \rightarrow \infty \;causes \;e^{-ct}\rightarrow 0\]
+	Thus, $(\overline{x}, \overline{y})$ is a stable equilibrium point.
+	\subsection {Q4}
+	If (a, b) = (0.5, 0.3), we have $\overline{x} = \frac{10}{17}$ and $\overline{y} = \frac{14}{17}$\\
+	By phase diagram, we have ... TODO\\
+	According to Q3, tr(A) = $\frac{0.5\alpha_1+0.7\alpha_2}{-0.85} < 0$ and det(A) = $\frac{0.35\alpha_1\alpha_2}{0.85} > 0$ (since $\alpha_1$ and $\alpha_2$ are $>$ 0), the point $(\overline{x}, \overline{y})$ is a stable equilibrium poing.
+
+	\section {Problem 2}
+	\subsection {Q1}
+	Original equation:
+	\[Gaussian = \frac{1}{\sqrt{2\sigma^2\pi}}e^{\frac{-(x-x_o)^2}{2\sigma^2}}\]
+	Modified equation:
+	\[Modified \;Gaussian = \frac{1}{\sqrt{2\sigma^2\pi}}e^{\frac{-(x-x_o)^2}{2\sigma^2}}\]
+	\subsection {Q2}
+	If using Delta func, we may set
+	\[Delta \;func = \left\{ \begin{array}{rcl} 0.2 & \mbox{for} & 12.5\leq x\leq17.5 \\
+												0 & \mbox{for} & otherwise\end{array} \right.\]
+	But the probability for each element in (12.5, 17.5) are equal.
 \end {document}
