@@ -8,6 +8,9 @@
 \fancyhead[C] {HW3-R05229011}
 \fancyhead [LO] {\thepage}
 
+\usepackage {graphicx}
+\graphicspath {{hw3/}}
+
 \begin {document}
 	\section {Problem 1}
 	\subsection {Q1 - solve $\overline{x}$ and $\overline{y}$}
@@ -43,18 +46,21 @@
 	Thus, $(\overline{x}, \overline{y})$ is a stable equilibrium point.
 	\subsection {Q4}
 	If (a, b) = (0.5, 0.3), we have $\overline{x} = \frac{10}{17}$ and $\overline{y} = \frac{14}{17}$\\
-	By phase diagram, we have ... TODO\\
+	By phase diagram, we have\\
+	\includegraphics [width=\linewidth]{fig1}
 	According to Q3, tr(A) = $\frac{0.5\alpha_1+0.7\alpha_2}{-0.85} < 0$ and det(A) = $\frac{0.35\alpha_1\alpha_2}{0.85} > 0$ (since $\alpha_1$ and $\alpha_2$ are $>$ 0), the point $(\overline{x}, \overline{y})$ is a stable equilibrium poing.
 
 	\section {Problem 2}
 	\subsection {Q1}
 	Original equation:
 	\[Gaussian = \frac{1}{\sqrt{2\sigma^2\pi}}e^{\frac{-(x-x_o)^2}{2\sigma^2}}\]
-	Modified equation:
-	\[Modified \;Gaussian = \frac{1}{\sqrt{2\sigma^2\pi}}e^{\frac{-(x-x_o)^2}{2\sigma^2}}\]
+	Modified equation (by changing $\sigma$ to $\frac{\sigma}{3}$):
+	\[Modified \;Gaussian = \frac{3}{\sqrt{2\sigma^2\pi}}e^{\frac{-9(x-x_o)^2}{2\sigma^2}}\]
+	My thought is that the range is around from (0, 30) to (10, 20) (3 = $\frac{30-0}{20-10}$)
 	\subsection {Q2}
 	If using Delta func, we may set
-	\[Delta \;func = \left\{ \begin{array}{rcl} 0.2 & \mbox{for} & 12.5\leq x\leq17.5 \\
+	\[Delta \;func(x) = \left\{ \begin{array}{rcl} 0.2 & \mbox{for} & 12.5\leq x\leq17.5 \\
 												0 & \mbox{for} & otherwise\end{array} \right.\]
-	But the probability for each element in (12.5, 17.5) are equal.
+	The probability of Delta func for each element in (12.5, 17.5) are equal. It implies that there couldn't be any data out of (12.5, 17.5) since the probability is 0.\\
+	In Gaussian, there could exist data out of (12.5, 17.5) but the probability is very small. Besides, the probability of data in (12.5, 17.5) are not equal.
 \end {document}
